@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$height: 45px;
+
+#app {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+
+  .wrap {
+    width: 500px;
+  }
+}
+
+.select {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+  .arrow {
+    transition: all 0.2s;
+  }
+
+  &__background{
+    position: fixed;
+    top: 0;
+    cursor: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: none;
+    background-color: transparent;
+  }
+  &.open {
+    .arrow {
+      transform: rotate(180deg);
+      transition: all 0.2s;
+    }
+    .select__dropdown {
+      display: block;
+    }
+    .select__background{
+      display: block;
+    }
+    .select__input {
+      border-bottom:  none;
+      cursor: pointer;
+    }
+
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+
+    &.selected {
+      background-color: fade_in(darkorange, 0.4) !important;
+      &:hover {
+        background: rgba(darkorange, 0.7) !important;
+      }
+    }
+    &:hover {
+      background-color: rgba($color: #eee, $alpha: 0.8);
+      cursor: pointer;
+    }
+
+    &:hover {
+      transition: 0.3s all  ease-in;
+    }
+  }
+
+  &__input {
+    border: 1px solid #d5ccd8;
+    height: $height;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    border: 1px solid #d5ccd8;
+    border-radius: 5px;
+    top: $height;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 1px 2px 2px rgba($color: #000000, $alpha: 0.3);
+  }
+}
