@@ -8,6 +8,7 @@
  Simple Select Plugin
 </p>
 <p>Code:  https://github.com/stenready/select-plugin/blob/master/src/js/select/select.js</p>
+<p>Code css:  https://github.com/stenready/select-plugin/blob/master/src/sass/index.scss</p>
 
 ## Usage
 
