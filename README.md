@@ -7,7 +7,7 @@
 <p>
  Simple Select Plugin
 </p>
-
+<p>Code:  https://github.com/stenready/select-plugin/blob/master/src/js/select/select.js</p>
 
 ## Usage
 
