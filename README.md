@@ -1,9 +1,5 @@
 # select-plugin
 
-
-<p>
-  Countdown timer until the end of the promotion
-</p>
 <p>
  Simple Select Plugin
 </p>
